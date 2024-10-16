@@ -1,0 +1,253 @@
+/* fuentes desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:wght@400&display=swap');
+
+/* Estilo general para el body */
+body {
+  font-family: 'Roboto', sans-serif; /* Cambiar fuente de los párrafos */
+  line-height: 1.3; /* Reducir interlineado */
+  padding: 20px;
+}
+  
+  /* Encabezado */
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4a90e2;
+    color: white;
+    border-radius: 8px;
+    font-family: 'Lobster', cursive; /* Cambiar fuente del encabezado */
+  }
+  
+  header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  header .lead {
+    font-size: 1.2em;
+    color: #d9ecff;
+  }
+  
+  /* Barra de navegación */
+  .navbar {
+    background-color: #d3e0ea;
+    padding: 10px 0;
+    border-radius: 8px;
+    margin: 5px 0; /* Separación leve arriba y abajo */
+  }
+  
+  .navbar ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  .navbar ul li {
+    display: inline;
+    margin: 0 15px;
+    position: relative;
+  }
+  
+  .navbar ul li a {
+    text-decoration: none;
+    color: #4a90e2;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 5px 10px;
+    transition: color 0.3s, text-shadow 0.3s;
+  }
+  
+  /* Efecto de aura con subrayado animado */
+  .navbar ul li a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 8px #007acc;
+  }
+  
+  .navbar ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #007acc;
+    transition: width 0.3s ease-in-out;
+    position: absolute;
+    bottom: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .navbar ul li a:hover::after {
+    width: 100%;
+  }
+  
+  /* Estilos para los posts */
+  .post {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .post-header {
+    text-align: center; /* Centrar texto */
+  }
+  
+  .post-header h3 {
+    color: #4a90e2;
+    margin-bottom: 10px;
+
+    font-size: 1.8em;
+font-weight: bold;
+
+  }
+  
+  .post-header img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    
+    display: block;
+margin: 0 auto;
+
+  }
+  
+  .post-header .subtitulo {
+    font-size: 0.9em;
+    color: #777;
+  }
+  
+  .post-body p {
+    margin-bottom: 10px; /* Reducir espaciado entre párrafos */
+    text-align: justify;
+    padding: 0 10px;
+  }
+  
+/* Estilos para las tablas en los posts */
+.post-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  border-radius: 8px; /* Bordes redondeados */
+  overflow: hidden; /* Asegura que los bordes redondeados se vean */
+}
+
+.post-body th, 
+.post-body td {
+  border: 1px solid #ddd; /* Bordes de la tabla */
+  padding: 12px; /* Espacio interior */
+  text-align: center; /* Centrar texto */
+}
+
+/* Encabezado de la tabla */
+.post-body th {
+  background-color: #4a90e2; /* Color de fondo del encabezado */
+  color: white; /* Color del texto en el encabezado */
+}
+
+/* Filas de la tabla */
+.post-body tr:nth-child(even) {
+  background-color: #f2f2f2; /* Color de fondo para filas pares */
+}
+
+.post-body tr:hover {
+  background-color: #e8f0fe; /* Color de fondo al pasar el cursor */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil al pasar el cursor */
+}
+
+/* Estilos para la tabla de imágenes en los posts */
+.post-body table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que los bordes redondeados se vean */
+  }
+  
+  .post-body td {
+    padding: 0; /* Sin espaciado interno */
+  }
+  
+  .post-body img {
+    width: 100%; /* Imagen ocupa el 100% de la celda */
+    height: auto; /* Mantener proporción */
+    max-width: 280px; /* Máximo ancho de la imagen */
+    max-height: 210px; /* Máximo alto de la imagen */
+    object-fit: cover; /* Recorta la imagen para mantener la proporción */
+    transition: transform 0.3s ease; /* Transición suave para el efecto hover */
+  }
+  
+  /* Efecto al pasar el cursor sobre la imagen */
+  .post-body td:hover img {
+    transform: scale(1.05); /* Aumenta el tamaño ligeramente */
+  }
+  
+  .post-body tr {
+    background-color: #f9f9f9; /* Color de fondo por defecto */
+  }
+  
+  .post-body tr:hover {
+    background-color: #e0f7fa; /* Color de fondo al pasar el cursor */
+  }
+  
+  .post-body td {
+    border: 2px solid #4a90e2; /* Bordes de las celdas */
+  }
+  
+  
+  .post-body td {
+    text-align: center;
+  }
+  
+  /* Estilos para el footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4a90e2;
+    color: white;
+    border-radius: 8px;
+  }
+  
+  footer h4 {
+    margin-bottom: 15px;
+  }
+  
+  footer form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  footer label {
+    margin: 5px 0;
+  }
+  
+  footer input[type="text"],
+  footer input[type="email"] {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 80%;
+  }
+  
+  footer input[type="checkbox"] {
+    margin-left: 5px;
+  }
+  
+  footer .submitbutton {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  footer .submitbutton:hover {
+    background-color: #005f8a;
+  }
+  
